@@ -1,0 +1,48 @@
+name: "🗓 Daily Scrum"
+description: "팀원별 데일리 스크럼을 기록합니다."
+title: "[Daily] 2025-MM-DD (요일)"
+labels:
+  - scrum
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📢 공지 / 공유 사항
+
+        팀 전체에 공유할 내용이 있다면 아래에 작성해주세요.
+
+  - type: textarea
+    id: notice
+    attributes:
+      label: 📌 공지사항
+      placeholder: |
+        예시)
+        - 금요일 오후 3시 중간 점검
+        - API 명세 업데이트 완료
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## 👥 팀원 데일리 스크럼
+
+        아래 템플릿을 **복사하여 댓글(Comment)** 로 작성해주세요.
+
+        ```markdown
+        ### 😀 이름
+
+        #### ✅ 어제 한 일
+        - 작업 1
+        - 작업 2
+
+        #### 🎯 오늘 할 일
+        - 작업 1
+        - 작업 2
+
+        #### 🚨 문제 / 이슈 (선택)
+        - 없음
+        ```
