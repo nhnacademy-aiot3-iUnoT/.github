@@ -1,0 +1,63 @@
+name: "❓ Question"
+description: "팀원들과 논의하거나 의견이 필요한 사항을 작성합니다."
+title: "[Question] 질문 제목"
+labels:
+  - question
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 📌 질문 제목
+      description: 한눈에 이해할 수 있도록 작성해주세요.
+      placeholder: 예) JWT Refresh Token 관리 방식
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 📖 배경 및 상황
+      description: 질문하게 된 배경이나 현재 상황을 작성해주세요.
+      placeholder: |
+        예시)
+        - 현재 Access Token 만료 시 재로그인이 필요합니다.
+        - Refresh Token을 도입할지 고민 중입니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ 질문 / 논의 내용
+      description: 어떤 점이 궁금하거나 논의가 필요한지 작성해주세요.
+      placeholder: |
+        예시)
+        - Refresh Token을 DB에 저장하는 것이 좋을까요?
+        - Redis를 사용하는 것이 적절할까요?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: feedback
+    attributes:
+      label: 🗣 원하는 의견
+      description: 어떤 도움이 필요한지 선택해주세요.
+      options:
+        - label: 설계 방향
+        - label: 구현 방법
+        - label: 일정 조율
+        - label: 정책 결정
+        - label: 코드 리뷰
+        - label: 기타
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 📎 참고 자료 (선택)
+      description: 관련 문서, 링크, 이미지 등을 첨부해주세요.
+      placeholder: |
+        - GitHub Issue
+        - Notion
+        - API 문서
+        - 화면 캡처

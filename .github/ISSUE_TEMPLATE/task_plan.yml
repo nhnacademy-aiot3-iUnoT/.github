@@ -1,0 +1,65 @@
+name: "📅 Task Plan"
+description: "작업 계획을 작성합니다."
+title: "[Task] 작업 제목"
+labels:
+  - plan
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 📌 작업 제목
+      description: 한눈에 알아볼 수 있는 작업명을 작성해주세요.
+      placeholder: 예) Telegram Bot MCP 연동
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 📖 작업 내용
+      description: 어떤 작업인지 구체적으로 작성해주세요.
+      placeholder: |
+        예시)
+        - Telegram Bot과 MCP Server를 연동한다.
+        - 사용자의 자연어 요청을 MCP Tool로 전달한다.
+        - 응답 결과를 Telegram으로 반환한다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✅ 세부 작업(Task)
+      description: 작업을 완료하기 위한 세부 작업을 체크리스트 형태로 작성해주세요.
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 🎯 완료 기준
+      description: 언제 이 작업이 완료되었다고 볼 수 있는지 작성해주세요.
+      placeholder: |
+        예시)
+        - Telegram에서 정상적으로 응답을 받을 수 있다.
+        - 예외 상황까지 테스트를 완료한다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 🔗 참고 자료 (선택)
+      description: 관련 문서, API, 디자인 등을 첨부해주세요.
+      placeholder: |
+        - GitHub Issue
+        - Notion
+        - Figma
+        - API 문서
+    validations:
+      required: false
