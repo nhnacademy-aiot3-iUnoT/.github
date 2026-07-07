@@ -6,18 +6,10 @@ labels:
 
 body:
   - type: input
-    id: meeting_name
-    attributes:
-      label: 📌 회의명
-      placeholder: 예) 주간 회의, Sprint Planning
-    validations:
-      required: true
-
-  - type: input
     id: participants
     attributes:
       label: 👥 참석자
-      placeholder: 예) 김철수, 이영희, 박민수
+      placeholder: 예) ooo, xxx (n명)
     validations:
       required: true
 

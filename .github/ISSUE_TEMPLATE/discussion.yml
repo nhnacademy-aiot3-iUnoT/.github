@@ -2,18 +2,9 @@ name: "❓ Question"
 description: "팀원들과 논의하거나 의견이 필요한 사항을 작성합니다."
 title: "[Question] 질문 제목"
 labels:
-  - question
+  - discussion
 
 body:
-  - type: input
-    id: title
-    attributes:
-      label: 📌 질문 제목
-      description: 한눈에 이해할 수 있도록 작성해주세요.
-      placeholder: 예) JWT Refresh Token 관리 방식
-    validations:
-      required: true
-
   - type: textarea
     id: background
     attributes:

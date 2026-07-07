@@ -5,15 +5,6 @@ labels:
   - documentation
 
 body:
-  - type: input
-    id: title
-    attributes:
-      label: 📌 문서 제목
-      description: 작성하거나 수정할 문서명을 입력해주세요.
-      placeholder: 예) README 설치 가이드 개선
-    validations:
-      required: true
-
   - type: textarea
     id: background
     attributes:
