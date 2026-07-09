@@ -1,6 +1,6 @@
 name: "🗓 Daily Scrum"
 description: "팀원별 데일리 스크럼을 기록합니다."
-title: "[Daily] YYYY-MM-DD (요일)"
+title: "[Daily] 2026-MM-DD (요일)"
 labels:
   - scrum
 
