@@ -1,6 +1,6 @@
-name: "🐞 Bug"
+name: "🐞 Bug Report"
 description: "버그를 제보하거나 수정 작업을 등록합니다."
-title: "[Bug] 버그 제목"
+title: "[Bug] "
 labels:
   - bug
 
@@ -9,24 +9,24 @@ body:
     id: description
     attributes:
       label: 🐛 문제 설명
-      description: 어떤 문제가 발생했는지 작성해주세요.
+      description: 발생한 문제를 자세히 작성해주세요.
       placeholder: |
         예시)
         - 로그인 성공 후 메인 화면으로 이동하지 않습니다.
-        - 콘솔에 500 에러가 발생합니다.
+        - API 호출 시 500 에러가 발생합니다.
     validations:
       required: true
 
   - type: textarea
     id: reproduce
     attributes:
-      label: 🔍 재현 방법
-      description: 버그를 재현하는 과정을 작성해주세요.
+      label: 🔄 재현 방법
+      description: 버그를 재현하는 순서를 작성해주세요.
       placeholder: |
         1. 로그인 페이지 접속
-        2. 계정 입력 후 로그인
+        2. ID/PW 입력
         3. 로그인 버튼 클릭
-        4. 오류 발생
+        4. 메인 화면으로 이동하지 않음
     validations:
       required: true
 
@@ -34,10 +34,33 @@ body:
     id: expected
     attributes:
       label: ✅ 기대 결과
-      description: 정상이라면 어떤 결과가 나와야 하는지 작성해주세요.
+      description: 정상적으로 동작한다면 어떤 결과가 나와야 하나요?
       placeholder: |
-        예시)
-        - 로그인 성공 후 메인 페이지로 이동해야 합니다.
+        로그인 성공 후 Dashboard로 이동한다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ 실제 결과
+      description: 실제로 어떤 현상이 발생했나요?
+      placeholder: |
+        - 500 Internal Server Error
+        - 흰 화면이 출력됨
+        - 콘솔에 예외 발생
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🚨 심각도
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
     validations:
       required: true
 
@@ -45,7 +68,7 @@ body:
     id: todo
     attributes:
       label: 🛠 작업 계획
-      description: 수정을 위한 작업을 체크리스트로 작성해주세요.
+      description: 수정 작업을 체크리스트로 작성해주세요.
       value: |
         - [ ] 원인 분석
         - [ ] 코드 수정
@@ -58,9 +81,9 @@ body:
     id: reference
     attributes:
       label: 📎 참고 자료 (선택)
-      description: 로그, 스크린샷, 관련 이슈 등을 첨부해주세요.
+      description: 로그, 스크린샷, 관련 Issue/PR 등을 첨부해주세요.
       placeholder: |
-        - 오류 로그
-        - 스크린샷
-        - 관련 Issue
-        - 관련 PR
+        - Error Log
+        - Screenshot
+        - Related Issue
+        - Related PR

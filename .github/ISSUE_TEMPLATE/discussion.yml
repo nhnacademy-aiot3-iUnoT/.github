@@ -1,6 +1,6 @@
 name: "❓ Question"
 description: "팀원들과 논의하거나 의견이 필요한 사항을 작성합니다."
-title: "[Question] 질문 제목"
+title: "[Question] "
 labels:
   - discussion
 
@@ -13,7 +13,7 @@ body:
       placeholder: |
         예시)
         - 현재 Access Token 만료 시 재로그인이 필요합니다.
-        - Refresh Token을 도입할지 고민 중입니다.
+        - Refresh Token 도입 여부를 고민 중입니다.
     validations:
       required: true
 
@@ -21,7 +21,7 @@ body:
     id: question
     attributes:
       label: ❓ 질문 / 논의 내용
-      description: 어떤 점이 궁금하거나 논의가 필요한지 작성해주세요.
+      description: 궁금한 점이나 팀과 논의하고 싶은 내용을 작성해주세요.
       placeholder: |
         예시)
         - Refresh Token을 DB에 저장하는 것이 좋을까요?
@@ -29,17 +29,33 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 질문 유형
+      options:
+        - 설계(Architecture)
+        - 구현(Implementation)
+        - 데이터베이스(Database)
+        - 인프라(Infra)
+        - UI/UX
+        - 일정(Schedule)
+        - 기타
+    validations:
+      required: true
+
   - type: checkboxes
     id: feedback
     attributes:
       label: 🗣 원하는 의견
-      description: 어떤 도움이 필요한지 선택해주세요.
+      description: 필요한 의견을 모두 선택해주세요.
       options:
         - label: 설계 방향
         - label: 구현 방법
+        - label: 코드 리뷰
         - label: 일정 조율
         - label: 정책 결정
-        - label: 코드 리뷰
+        - label: 아이디어 제안
         - label: 기타
 
   - type: textarea
@@ -49,6 +65,7 @@ body:
       description: 관련 문서, 링크, 이미지 등을 첨부해주세요.
       placeholder: |
         - GitHub Issue
+        - Pull Request
         - Notion
         - API 문서
         - 화면 캡처
