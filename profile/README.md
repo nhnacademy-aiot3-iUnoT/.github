@@ -25,7 +25,7 @@ IoT 센서 데이터를 활용하여 의약품 보관 환경을 관리하고,
 | 강병호 | 고나영 | 마지희 | 박준원 | 임성준 | 정다빈 | 정영우 | 홍보람 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | <img width="120" src="https://avatars.githubusercontent.com/u/94677012?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/133228490?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/251104855?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/145592263?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/52077256?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/182188997?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/176290691?v=4"/> | <img width="120" src="https://avatars.githubusercontent.com/u/176385754?v=4"/> |
-| 인프라 | - | 재고 관리 | 룰 엔진 | 인증/인가 | 룰 엔진 | - | 재고 관리 |
+| 인프라 | Front/조직관리 | 재고 관리 | 룰 엔진 | 인증/인가 | 룰 엔진 | 재고 관리 | 재고 관리 |
 
 </div>
 
