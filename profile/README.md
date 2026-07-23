@@ -105,7 +105,7 @@
 > 🚧 현재 설계 보완 중이며 지속적으로 업데이트됩니다.
 <div align="center">
 
-<img src="img/[erd]v1.png" width="750"/>
+<img src="img/erd.png" width="750"/>
 
 </div>
 
