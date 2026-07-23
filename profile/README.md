@@ -48,10 +48,10 @@ IoT 센서 데이터를 활용하여 의약품 보관 환경을 관리하고,
 ---
 
 ## 🗄 ERD
-
+수정중 ....
 <div align="center">
 
-<img src="img/erd.png" width="850"/>
+<img src="img/[erd]v1.png" width="850"/>
 
 </div>
 
