@@ -134,6 +134,7 @@
 | [요구사항](https://github.com/nhnacademy-aiot3-iUnoT/docs) | 서비스 요구사항 정의 |
 | [기능명세](https://github.com/nhnacademy-aiot3-iUnoT/docs/tree/docs/%EA%B8%B0%EB%8A%A5%20%EB%AA%85%EC%84%B8) | 기능 명세서 |
 | [목업](https://github.com/nhnacademy-aiot3-iUnoT/docs/tree/docs/%EB%AA%A9%EC%97%85) | 목업 문서화 |
+| [진척도](https://docs.google.com/spreadsheets/d/1ED5viC_aVFOswLuSUyOdsAa8RO12muYk_zNTHsFyjQg/edit?usp=sharing) | 기능 구현 현황 |
 | API Docs | REST Docs (예정) |
 
 ---
