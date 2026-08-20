@@ -136,5 +136,6 @@
 | [목업](https://github.com/nhnacademy-aiot3-iUnoT/docs/tree/docs/%EB%AA%A9%EC%97%85) | 목업 문서화 |
 | [진척도](https://docs.google.com/spreadsheets/d/1ED5viC_aVFOswLuSUyOdsAa8RO12muYk_zNTHsFyjQg/edit?usp=sharing) | 기능 구현 현황 |
 | API Docs | REST Docs (예정) |
+| [프로젝트 보고서](https://www.miricanvas.com/v2/ko/design2/c8831b48-42f5-410a-8893-6382097c639c) | 작성중 |
 
 ---
